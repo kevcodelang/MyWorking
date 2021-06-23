@@ -22,7 +22,7 @@ fun stringReplacement() {
         }
     }
 }
-
+f
 fun reverse(str: String): String {
     val chars: CharArray = str.toCharArray()
     var l = 0
