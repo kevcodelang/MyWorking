@@ -1,17 +1,17 @@
 fun main() {
-    evenlyspaced(a = 6, b = 4, c = 2)
+    evenlyspaced(4, 6, 8)
 }
 
 fun evenlyspaced(a: Int, b: Int, c: Int) {
-    var max = a
-    if (b > max) max = b
-    if (c > max) max = c
+    var large = a
+    if (b > large) large = b
+    if (c > large) large = c
 
-    var min = a
-    if (b < min) min = b
-    if (c < min) min = c
+    var small = a
+    if (b < small) small = b
+    if (c < small) small = c
 
-    var med = max - min
+    var medium = ((a+b+c)-(large + small))
 
-    println((med - min) == (max - med))
+    println((medium - small) == (large - medium))
 }
